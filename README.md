@@ -1,4 +1,4 @@
-# codecov-karma example [![codecov.io](http://codecov.io/github/kt3k/codecov-karma-example/coverage.svg?branch=master)](http://codecov.io/github/kt3k/codecov-karma-example?branch=master)
+# codecov-karma example [![Build Status](https://travis-ci.org/kt3k/codecov-karma-example.svg?branch=master)](https://travis-ci.org/kt3k/codecov-karma-example) [![codecov.io](http://codecov.io/github/kt3k/codecov-karma-example/coverage.svg?branch=master)](http://codecov.io/github/kt3k/codecov-karma-example?branch=master)
 
 > An example repository for showing how to generate the codecov reports with Karma testing framework.
 
