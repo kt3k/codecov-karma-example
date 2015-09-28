@@ -1,0 +1,33 @@
+{
+  "name": "codecov-karma-example",
+  "version": "1.0.0",
+  "description": "An example repository for showing how to generate the codecov reports with Karma testing framework.",
+  "main": "src.js",
+  "scripts": {
+    "test": "karma start karma.conf.js",
+    "ci": "karma start karma.conf.js --browsers PhantomJS",
+    "codecov": "cat coverage/*/lcov.info | codecov"
+  },
+  "keywords": [
+    "karma",
+    "codecov"
+  ],
+  "author": "Yoshiya Hinosawa <stibium121@gmail.com> (https://twitter.com/kt3k)",
+  "license": "Public Domain",
+  "peerDependencies": {
+    "jquery": "^2.1.4"
+  },
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "codecov.io": "^0.1.6",
+    "jquery": "^2.1.4",
+    "karma": "^0.13.10",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-coverage": "^0.5.2",
+    "karma-mocha": "^0.2.0",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "mocha": "^2.3.3",
+    "phantomjs": "^1.9.18"
+  }
+}
