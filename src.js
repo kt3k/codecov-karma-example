@@ -27,11 +27,20 @@
 
         var items = [];
 
-        for (var i = 0; i < count; i++) {
+        for (var i = 1; i <= count; i++) {
 
+            if (i % 15 === 0) {
+                items.push('FizzBuzz');
+            } else if (i % 5 === 0) {
+                items.push('Buzz');
+            } else if (i % 3 === 0) {
+                items.push('Fizz');
+            } else {
+                items.push(i);
+            }
         }
 
-        this.text(items.join('<br />'));
+        this.html(items.join('<br>'));
 
     };
 
