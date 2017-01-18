@@ -5,12 +5,12 @@
 
 > An example repository for showing how to generate the codecov reports with Karma testing framework.
 
-# How to make codecov report with karma (with travis-ci)
+# How to make codecov report with karma (with circle-ci)
 
 First, `git init` and `npm init` and then,
 
 ```sh
-npm install --save-dev karma karma-coverage codecov.io
+npm install --save-dev karma karma-coverage codecov
 karma init
 ```
 
@@ -23,7 +23,6 @@ And then edit karma.conf.js and modify `preprocessor`, `reporters` and `coverage
   reporters: ['progress', 'coverage'],
 
   coverageReporter: {
-
     reporters: [{type: 'lcov'}]
   }, 
 ```
@@ -34,20 +33,15 @@ And then add scripts to package.json
 ```json
   "scripts": {
     "test": "karma start karma.conf.js",
-    "ci": "karma start karma.conf.js --browsers PhantomJS",
-    "codecov": "cat coverage/*/lcov.info | codecov"
+    "codecov": "codecov"
   },
 ```
 
-And then edit `.travis.yml` (for example).
+And then edit `circle.yml` (for example).
 ```yml
-language: node_js
-
-script:
-- npm run ci
-
-after_success:
-- npm run codecov
+test:
+  post:
+    - npm run codecov
 ```
 
-And then turn on the repository setting on travis-ci UI and push the change to github and you'll see the coverage report on codecov.io website.
+And then turn on the repository setting on circle-ci UI and push the change to github and you'll see the coverage report on codecov.io website.

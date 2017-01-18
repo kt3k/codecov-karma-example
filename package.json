@@ -5,7 +5,7 @@
   "main": "src.js",
   "scripts": {
     "test": "karma start karma.conf.js",
-    "codecov": "cat coverage/*/lcov.info | codecov"
+    "codecov": "codecov"
   },
   "keywords": [
     "karma",
@@ -16,7 +16,7 @@
   "license": "MIT",
   "devDependencies": {
     "chai": "^3.3.0",
-    "codecov.io": "^0.1.6",
+    "codecov": "^1.0.1",
     "jquery": "^3.1.1",
     "karma": "^1.4.0",
     "karma-chai": "^0.1.0",
