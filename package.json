@@ -5,7 +5,6 @@
   "main": "src.js",
   "scripts": {
     "test": "karma start karma.conf.js",
-    "ci": "karma start karma.conf.js --browsers PhantomJS",
     "codecov": "cat coverage/*/lcov.info | codecov"
   },
   "keywords": [
@@ -27,8 +26,6 @@
     "karma-chrome-launcher": "^2.0.0",
     "karma-coverage": "^1.1.1",
     "karma-mocha": "^1.3.0",
-    "karma-phantomjs-launcher": "^1.0.2",
-    "mocha": "^3.2.0",
-    "phantomjs": "^2.1.7"
+    "mocha": "^3.2.0"
   }
 }
