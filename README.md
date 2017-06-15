@@ -1,9 +1,8 @@
 # codecov-karma example
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/kt3k/codecov-karma-example.svg)](https://greenkeeper.io/)
-
 [![CircleCI](https://circleci.com/gh/kt3k/codecov-karma-example.svg?style=svg)](https://circleci.com/gh/kt3k/codecov-karma-example)
 [![codecov.io](http://codecov.io/github/kt3k/codecov-karma-example/coverage.svg?branch=master)](http://codecov.io/github/kt3k/codecov-karma-example?branch=master)
+[![Greenkeeper badge](https://badges.greenkeeper.io/kt3k/codecov-karma-example.svg)](https://greenkeeper.io/)
 
 > An example repository for showing how to generate the codecov reports with Karma testing framework.
 
